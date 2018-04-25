@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Winston技术能力</title>
+    <link href="css/gbook.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/gbook.js"></script>
+    <!--[if lt Ie 9]>
+    <script src="js/modernizr.js"></script> 
+    <![endif]-->
+    <script src="js/scrollReveal.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title" data-scroll-reveal="enter right over 1s">
+            <a href="#">留言板</a>
+        </div>
+        <nav class="topnav" data-scroll-reveal="enter bottom over 1s after 1s"><a href="index.html"><span>网站首页</span><span class="en">Home</span></a><a href="winston.html"><span>Winston？</span><span class="en">About</span></a><a href="project.html"><span>个人作品</span><span class="en">Projects</span></a><a href="ability.html"><span>技术能力</span><span class="en">Ability</span></a><a href="experience.html"><span>工作经历</span><span class="en">Experience</span></a><a href="thinking.html"><span>个人感悟</span><span class="en">Thinking</span></a><a href="gbook.html"><span>留言板</span><span class="en">Saying</span></a></nav>
+    </header>
+    <div id="wrap">
+        <h2 class="title"><span>人生若只如初见 何事秋风悲画扇</span>留言</h2>
+        <textarea id="text"></textarea>
+        <input type="button" value="留言" class="button">
+        <ul id="list"></ul>
+    </div>
+    </div>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        (function(){
+            window.scrollReveal = new scrollReveal({reset: true});
+        })();
+    };
+    </script>
+</body>
+
+</html>
