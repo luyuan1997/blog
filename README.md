@@ -1,4 +1,7 @@
-
- flex-add
-这是一个关于flexbox基础的骰子布局
- [demo](http://htmlpreview.github.com/?https://luguodong910208.github.io/blog/blog.html)
+该文件为自己建立的个人博客，用来对自己近两个半月以来学习HTML+CSS+JS+BootStrap等前端功能的集体展示，[博客展示](http://htmlpreview.github.io/?https://luguodong910208.github.io/blog/blog.html)。
+博客主要包含：个人的一些作品展示、个人的工作经验的介绍以及自己的一些个人感悟，将自己在知乎上面发表的一些文章进行了链接。
+作为一个阶段性总结，自己后续还有许多的路要走：
+1）增加Vue等框架的学习；
+2）需要开始自己造一些轮子进行使用；
+3）加强自身在Jquery等必须语言方面的加深；
+4）加深对于CSS以及ES6的学习
