@@ -3,15 +3,30 @@
 <head>
 	<meta http-equiv="content-type" content="text/html charset=utf-8">
 	<title>Winston的小家</title>
-	<meta name="viewport" content="Width=device-width, initial-scale=1">
+	<meta name="viewport" content="Width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/blog.css">
+	<link rel="stylesheet" href="css/blog2.css">
+	<script>
+		window.onload = function ()
+		{
+			var oH2 = document.getElementsByTagName("h2")[0];
+			var oUl = document.getElementsByTagName("ul")[0];
+			oH2.onclick = function ()
+			{
+				var style = oUl.style;
+				style.display = style.display == "block" ? "none" : "block";
+				oH2.className = style.display == "block" ? "open" : ""
+			}
+		}
+	</script>
 </head>
 <body>
-	<figure class="top"><p><a class="emails" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=HHh9cn95b3F1cHVye1xtbTJ-c3E" title="email"></a>
+	<figure class="fixed"><p><a class="emails" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=HHh9cn95b3F1cHVye1xtbTJ-c3E" title="email"></a>
 	<a class="rssdy" target="_blank" href="/e/web/?type=rss2"  title="rss订阅"></a><a class="fav" target="_blank" onClick="window.external.addFavorite" title="加入收藏"></a></p></figure>
 	<header>
 		<div id="mnav">
+			<h2><span class="navicon"></span></h2>
 			<ul>
 				<li><a href="index.html" target="_blank">网站首页</a></li>
 				<li><a href="winston.html" target="_blank">Winston？</a></li>
@@ -51,13 +66,15 @@
 	<article>
 		<h2 class="title_tj"><p>文章<span>推荐</span></p></h3>
 		<div class="bloglist left">
-			<h3><a href="https://zhuanlan.zhihu.com/p/35450736">如何判断一个值是否为NaN</a></h3>
-			<figure><img src="img/nan.jpeg"></figure>
-			<ul>
-				<p>一名机械男看着自己的IT女友为了毕业愁的每天熬夜，心疼的想着做些什么，于是被分配了页面设计工作，开启了自己的前端之路，废话不在多说，开始今天的话题：如何判断一个值是不是NaN...</p>
-				<a href="#" class="readmore">阅读>></a>
-			</ul>
-			<p class="dateview"><span>2018-04-09</span><span>作者：Winston</span><span>个人博客：[<a href="#">学习心得</a>]</span></p>
+			<div>
+				<h3><a href="https://zhuanlan.zhihu.com/p/35450736">如何判断一个值是否为NaN</a></h3>
+				<figure><img src="img/nan.jpeg"></figure>
+				<ul>
+					<p>一名机械男看着自己的IT女友为了毕业愁的每天熬夜，心疼的想着做些什么，于是被分配了页面设计工作，开启了自己的前端之路，废话不在多说，开始今天的话题：如何判断一个值是不是NaN...</p>
+					<a href="#" class="readmore">阅读>></a>
+				</ul>
+				<p class="dateview"><span>2018-04-09</span><span>作者：Winston</span><span>个人博客：[<a href="#">学习心得</a>]</span></p>
+			</div>
 			<h3><a href="https://zhuanlan.zhihu.com/p/35546030">我为什么选择从机械行业转行</a></h3>
 			<figure><img src="img/switch_job.jpg"></figure>
 			<ul>

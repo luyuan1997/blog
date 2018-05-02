@@ -11,11 +11,6 @@ window.onload = function(){
 		}
 		var li = document.createElement("li");
 		li.innerHTML = "我想轻轻地告诉你："+text.value;
-		if(list.children[0]&&list.children[0].className == "red"){
-			li.className = "pink";
-		} else {
-			li.className = "red";
-		};
 		var a =null;
 		li.onmouseover = function(){
 			if(a){
