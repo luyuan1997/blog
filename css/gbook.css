@@ -50,6 +50,7 @@ nav a {
     border-bottom: #dbf7ea 1px solid;
     overflow:hidden;
     color:#1f7d6a;
+    text-shadow:#fff 1px 1px 2px;
 }
 .title span{
     float:right;
@@ -100,26 +101,21 @@ opacity:1;
     border-radius: 10px;
     margin:0 20px 20px auto;
 }
-#list{
-    border-top:#dbf7ea 5px solid;
-}
 #list li{
     padding:5px 10px;
     position: relative;;
     word-break: break-all;
-    border-bottom:#dbf7ea 1px solid;
-    color:#000;
-    background: #a6c3bd;
 }
+.red{color:#000;background: #f1f1f1;}
+.pink{color:#000;background: #ccc;}
 .clos {
     display:inline-block;
     margin-right:20px;
     float:right;
     width: 100px;
-    color: black;
-    background: #dbf7ea;
+    color: #fff;
+    background: red;
     padding:0;
     text-decoration: none;
     text-align: center;
 }
-.clos:hover{color:red;}

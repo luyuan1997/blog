@@ -3,7 +3,7 @@ body{
 	font-family:"微软雅黑";
 	text-align: center;
 	color: #fff;
-	background: transparent url(../img/body_bg.jpeg) no-repeat fixed 0% 0% / cover;
+	background: transparent url(../img/body_bg.jpg) no-repeat fixed bottom center;
 }
 h2{
 	font-size:4em;
@@ -35,8 +35,6 @@ p{
 #home-area{
 	width:100%;
 	height:900px;
-	background:rgba(0, 1, 3,0.7) no-repeat fixed 100% 100% / cover;
-	border-bottom: 3px solid #000;
 }
 ul.countdown{
 	list-style:none;

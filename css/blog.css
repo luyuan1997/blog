@@ -15,23 +15,18 @@ footer{
 	width:1000px;
 	margin:auto;
 }
-.fixed{
-	width:35px;
+.top{
+	width:100%;
 	clear:both;
+	height:28px;
 	position:fixed;
-	right:0;
-	bottom:0;
 	z-index:9999;
-	background:rgba(93,93,93,0.5)
 }
-.fixed p{
+.top p{
 	width:100%;
 	margin:12px auto;
 	color:#fff;
 	line-height: 28px;
-}
-.fixed a{
-	display:block;
 }
 .emails{
 	float:right;
@@ -78,23 +73,9 @@ nav ul li{
 }
 nav ul li a{color:#fff;}
 #mnav{display:none;width:100%;}
-#mnav h2{
-	text-align: right;
-	color:#fff;
-	font-size:18px;
-	height:52px;
-	line-height: 52px;
-	padding-left:10px;
-	width:100%;
-}
-#mnav h2.open{
-	text-align:right;
-	background:rgba(93,93,93,0.5);
-	width:100%;
-}
 #mnav ul{
 	display:none;
-	background:rgba(93,93,93,0.5);
+	background: rgba(1,1,1,0.8);
 	width:100%;
 	padding-bottom: 40px;
 }
@@ -108,58 +89,6 @@ nav ul li a{color:#fff;}
 	text-align: center;
 }
 #mnav li a { color: #000;}
-#mnav h2 .navicon { margin-right: 15px; }
-.navicon {
-	display: inline-block;
-	position: relative;
-	width: 30px;
-	height: 5px;
-	background-color: #FFFFFF;
-}
-.navicon:before, .navicon:after {
-	content: '';
-	display: block;
-	width: 30px; 
-	height: 5px;
-	position: absolute;
-	background: #FFFFFF;
-	-webkit-transition-property: margin, -webkit-transform;
-	transition-property: margin, -webkit-transform;
-	transition-property: margin, transform;
-	transition-property: margin, transform, -webkit-transform;
-	-webkit-transition-duration: 300ms;
-	transition-duration: 300ms;
-}
-.navicon:before { margin-top: -10px; }
-.navicon:after { margin-top: 10px; }
-/* 展开后导航栏目 */
-#mnav h2.open .navicon {
-	background: rgba(1,1,1,0.8);
-}/* 使用背景色隐藏中间的红线 */
-#mnav h2.open .navicon:before {
-	margin-top: 0;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-#mnav h2.open .navicon:after {
-	margin-top: 0;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-#mnav h2.open .navicon:before, #mnav h2.open .navicon:after {
-	content: '';
-	display: block;
-	width: 30px;
-	height: 5px;
-	position: absolute;
-	background: #FFFFFF;
-	-webkit-transition-property: margin, -webkit-transform;
-	transition-property: margin, -webkit-transform;
-	transition-property: margin, transform;
-	transition-property: margin, transform, -webkit-transform;
-	-webkit-transition-duration: 300ms;
-	transition-duration: 300ms;
-}
 .banner{
 	background: url(../img/top_banner.jpg) top center no-repeat;
 	height: 265px;
@@ -167,7 +96,7 @@ nav ul li a{color:#fff;}
 	overflow: hidden;
 }
 .box{
-	width:100%;
+	width:1200px;
 	margin:auto;
 	overflow:hidden;
 }
@@ -385,7 +314,7 @@ opacity:1;
 }
 .avatar{
 	float:right;
-	margin:40px 10%;
+	margin:40px 160px;
 	width:130px;
 	height:130px;
 	border-radius:100%;
@@ -429,27 +358,22 @@ article{
 }
 .title_tj span{color:#FE5187;}
 .bloglist{
-	width:75%;
+	width:890px;
 	overflow: hidden;
 	background:url(../img/r_line.jpg) repeat-y right;
 }
-.bloglist figure{
-	width:30%;
-	float:left;
-	overflow:hidden;
-}
-.bloglist figure img{
-	padding:4px;
-	border:#f4f2f2 1px solid;
-	width:100%;
-}
+
+.bloglist figure{width:183px;float:left;}
+.bloglist figure img{padding:4px;border:#f4f2f2 1px solid;width:175px;}
 .bloglist h3{margin:20px 0 10px 0;color:#333;font-size:bold;}
 .bloglist ul{
-	margin:20px 0 0 10px;
+	float:left;
+	width:520px;
+	margin:10px 0 0 10px;
 	line-height:20px;
 }
 .bloglist h3 a{font:14px "宋体",Arial, Helvetica, sans-serif;color:#333;}
-.dateview { width: 100%; overflow: hidden; clear: both; margin: 10px 0 0 0; display: inline-block; background: #f6f6f6 url(../img/time.jpg) 15px center no-repeat; line-height: 26px; height: 26px; color: #838383; padding-left: 25px }
+.dateview { width: 695px; overflow: hidden; clear: both; margin: 10px 0 0 0; display: inline-block; background: #f6f6f6 url(../img/time.jpg) 15px center no-repeat; line-height: 26px; height: 26px; color: #838383; padding-left: 25px }
 .dateview span { margin: 0 10px; }
 .dateview span a { color: #099B43; }
 a.readmore{
@@ -457,39 +381,23 @@ a.readmore{
 	float:right;
 	margin:20px 0 0 0;
 }
-.right{width:20%;}
 .weather{
 	background:url(../img/weather_bg.jpg) no-repeat;
 	height:88px;
 	margin:20px 0;
 	padding:20px 0 0 75px;
 }
-.rank1 li {
-	height: 25px;
-	line-height: 25px;
-	clear: both;
-	padding-left: 15px;
-	overflow: hidden;
-}
-.rank1 { margin: 10px 0 ;background: #F3F3F3;}
+.news h3 { font-size: 14px; background: url(../images/r_title_bg.jpg) repeat-x center }
+.news h3 p { background: #fff; width: 70px }
+.news h3 span { color: #65b020 }
+.news h3.ph span { color: #37ccca; }
+.news h3.links span { color: #F17B6B; }
+.news ul { margin-bottom: 20px }
+.news ul li a:hover { text-decoration: underline }
+.rank1 li { height: 25px; line-height: 25px; clear: both; padding-left: 5px; overflow: hidden; padding-left: 15px; background: url(../images/li.jpg) no-repeat left center; }
+.rank1 { margin: 10px 0 }
 .rank1 li a { color: #333; }
-.rank2 {margin: 10px 0 ;background: #F3F3F3;}
-.rank2 li {
-	line-height: 30px;
-	height: 30px;
-	overflow: hidden;
-	padding-left: 24px;
-	border-bottom: #CCC dotted 1px;
-}
-.websites {
-	margin: 10px 0;
-	background: #F3F3F3;
-	border-radius: 50%;
-	text-align: center;
-}
-.websites li {
-	line-height: 26px; 
-	text-shadow: #fff 1px 1px 1px;
-	height: 26px;
-	list-style:none;
-}
+.rank2 { background: url(../images/ph.jpg) no-repeat left 8px; margin: 10px 0 }
+.rank2 li { line-height: 30px; height: 30px; overflow: hidden; padding-left: 24px; border-bottom: #CCC dotted 1px }
+.websites { margin: 10px 0; background: #F3F3F3; border-radius: 50%; text-align: center; }
+.websites li { line-height: 26px; text-shadow: #fff 1px 1px 1px; height: 26px; list-style:none;}
