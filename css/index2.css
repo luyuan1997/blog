@@ -1,4 +1,4 @@
-html,body{height:auto;width:100%;margin:0;padding:0;}
+html,body{margin:0;padding:0;overflow:scroll;}
 body{
 	font-family:"微软雅黑";
 	text-align: center;
@@ -33,9 +33,8 @@ p{
 	background : rgba(51, 51, 51, 0.71);
 }
 #home-area{
-	width:100%;
-	height:900px;
 	position:fixed;
+	width:100%;
 	z-index:1;
 }
 .home-area-text p{
@@ -43,7 +42,6 @@ p{
 	font-size:18px;
 	width:80%;
 	margin:auto;
-	margin-top:200px;
 	text-align: center;
 }
 .home-area-text p:last-child{
@@ -84,7 +82,6 @@ ul.countdown li span.self{
 }
 #gai{
 	overflow:hidden;
-	height:947px;
 	width:100%;
 	background: rgba(0,0,0,0.8);
 	margin-top:-20px;
