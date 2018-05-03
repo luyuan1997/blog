@@ -8,6 +8,14 @@
 	<link rel="stylesheet" href="css/index2.css">
 	<script src="js/timer.js"></script>
 	<script src="js/jquery-1.9.1.min.js"></script>
+	<script>
+		$(window).on("load resize",function(){
+	        var h=window.innerHeight||document.body.clientHeight||document.documentElement.clientHeight;
+	        $("#gai").css("height",h);
+	        $('.first-p').css("margin-top",(h/5));
+	        $('.second-p').css('margin-top',(h/10));
+	    });
+	</script>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -58,8 +66,8 @@
 	</nav>
 	<div id="home-area">
 		<div class="home-area-text">
-			<p style="font-size:20px;color:orangered">GLAD TO SEE U, WELCOME TO WISTON'S BLOG</p>
-			<p>I'm the type of person,if you ask me a question, and I don't know the answer,I'm gonna to tell you that I don't know.But I bet you what: I know how to find the answer, and I'll find the answer.</p>
+			<p class = "first-p" style="font-size:20px;color:orangered">GLAD TO SEE U, WELCOME TO WISTON'S BLOG</p>
+			<p class="second-p">I'm the type of person,if you ask me a question, and I don't know the answer,I'm gonna to tell you that I don't know.But I bet you what: I know how to find the answer, and I'll find the answer.</p>
 			<p>我是这样的人，如果你问的问题我不知道答案，我会直接告诉你“我不知道”。但我向你保证：我知道如何寻找答案，而且我一定会找出答案的。</p>
 		</div>
 		<ul class="countdown wow fadeInUp" data-wow-duration="7s">
@@ -99,7 +107,7 @@
 			setInterval(function(){
 				i++;
 				i=i%5;
-				oBody.style.background="url(images/"+imgs[i]+") fixed";
+				oBody.style.background="url(images/"+imgs[i]+") fixed top center";
 			},5000);
 		}
 	</script>
