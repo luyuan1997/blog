@@ -99,6 +99,7 @@ ul.countdown p{
 	height:100%;
 	display:table;
 	text-align:center;
+	border-bottom:5px solid #096254;
 }
 .selfIntro *{
 	text-align: center;
@@ -108,6 +109,10 @@ ul.countdown p{
     display:table-cell;
     vertical-align: middle;
     color:#1c1c1c;
+}
+.exp-h4{
+	margin:0;
+	padding:0 !important;
 }
 .subtitle span{
 	display:inline-block;
@@ -120,6 +125,10 @@ ul.countdown p{
 }
 .col-md-4 *{
 	text-align:left;
+}
+.row{
+	margin-left:0;
+	margin-right: 0;
 }
 .mess-title{
     padding:30px 0 10px 0;
@@ -217,12 +226,18 @@ opacity:1;
 	margin-bottom: 3px;
 	margin-right: 3px;
 }
-.ability p{
-	display:inline-block;
+footer{
+	background:url(../images/footer.jpg) no-repeat center center / cover;
+	color:#096254;
+	height: auto;
 }
-.workExp *{
-	text-align:center;
+.linkMe{
+	clear:both;
+	text-align: center;
 }
-.section{
-	text-align:center;
+footer p{
+	display:block;
+	text-align: center;
+	margin:auto;
+	position:relative;
 }
