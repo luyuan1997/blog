@@ -3,6 +3,7 @@
 <head>
 	<title>Winston的小屋</title>
 	<meta http-equiv="content-type" content="text/html charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome =1" />
 	<meta name="viewport" content="Width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/index2.css">
@@ -11,7 +12,7 @@
 	<script>
 		$(window).on("load resize",function(){
 	        var h=window.innerHeight||document.body.clientHeight||document.documentElement.clientHeight;
-	        $("#gai").css("height",h);
+	        $(".cover").css("height",h);
 	        $('.first-p').css("margin-top",(h/10));
 	        $('.second-p').css('margin-top',(h/15));
 	        $('.selfIntro').css("height",h);
@@ -19,284 +20,258 @@
 	</script>
 </head>
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">首页</a></li>
-					<li><a href="#">个人简介</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">前端能力<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">个人作品</a></li>
-							<li><a href="#">技术储备</a></li>
-							<li><a href="#">工作经验</a></li>
-						</ul>
-					</li>
-					<li><a href="#">留言板</a></li>
-				</ul>
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">搜索</button>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I'm here<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#"><img src="images/github.png" alt="">Githhub</a></li>
-							<li><a href="#"><img src="images/email.png" alt="">Email</a></li>
-							<li><a href="#"><img src="images/wechat.png" alt="">微信</a></li>
-							<li><a href="#"><img src="images/zhihu.png" alt="">知乎</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div id="home-area">
-		<div class="home-area-text">
-			<p class = "first-p" style="font-size:18px;color:orangered">GLAD TO SEE U, WELCOME TO WISTON'S BLOG</p>
-			<p class="second-p">I'm the type of person,if you ask me a question, and I don't know the answer,I'm gonna to tell you that I don't know.But I bet you what: I know how to find the answer, and I'll find the answer.</p>
-			<p>我是这样的人，如果你问的问题我不知道答案，我会直接告诉你“我不知道”。但我向你保证：我知道如何寻找答案，而且我一定会找出答案的。</p>
-		</div>
-		<ul class="countdown wow fadeInUp" data-wow-duration="7s">
-			<li><span class="self">已经自学前端：</span></li>
-			<li>
-				<span id="days">00</span>
-				<p class="days_ref">days</p>
-			</li>
-			<li>
-				<span id="hours">00</span>
-				<p class="hours_ref">hours</p>
-			</li>
-			<li>
-				<span id="minutes">00</span>
-				<p class="minutes_ref">minutes</p>
-			</li>
-			<li>
-				<span id="seconds">00</span>
-				<p class="seconds_ref">seconds</p>
-			</li>
-		</ul>
-	</div>
-	<div id="gai">
+	<div>
 		
-	</div>
-	<div class="container-fluid self-info">
-		<section class="section selfIntro">
-			<img class="photo" src="images/photo.jpg" />
-            <h1 class="name">陆国栋</h1><br>
-            <p class="subtitle"><span>挑战&创新</span><span>钻研&细致</span><span>激情&执着</span></p><br>
-            <span>毕业院系：哈尔滨工业大学机电工程学院硕士</span>
-            <h4>想成为前端攻城狮的机械设计工程师</h4>
-			<p>If you want something, go get it.</p><br>
-            <p><a href="mailto:guodong_lu@126.com">guodong_lu@126.com</a></p>
-		</section>
-		<section class="container project">
-			<h1>项目经验</h1>
-            <div class="row">
-                <div class="col-md-2 center">
-                    <a class="circle-img" href="http://github.com/Ovilia/Polyvia" target="_blank">
-                        <img src="img/zhujianer.png" alt="Polyvia" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4><a href="http://github.com/Ovilia/Polyvia" target="_blank">Winston的游戏小屋</a></h4>
-                    <p>H5游戏及其目录的CSS3展示</p>
-                </div>
-                <div class="col-md-2 center">
-                    <a class="circle-img" href="http://01org.github.com/jWebAudio" target="_blank">
-                        <img src="img/jwebaudio.png" alt="jWebAudio" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4><a href="http://01org.github.com/jWebAudio" target="_blank">Flower for U</a></h4>
-                    <p>Vue全家桶：鲜花网站，支持在线下单支付功能</p>
-                </div>
-                <div class="clearboth"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 center">
-                    <a class="circle-img" href="http://github.com/Ovilia/Polyvia" target="_blank">
-                        <img src="img/zhujianer.png" alt="Polyvia" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4><a href="http://github.com/Ovilia/Polyvia" target="_blank">LLPlayer</a></h4>
-                    <p>Vue全家桶：简洁音乐视频播放器</p>
-                </div>
-                <div class="col-md-2 center">
-                    <a class="circle-img" href="http://01org.github.com/jWebAudio" target="_blank">
-                        <img src="img/jwebaudio.png" alt="jWebAudio" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4><a href="http://01org.github.com/jWebAudio" target="_blank">贴身助理</a></h4>
-                    <p>日程管理客户端，实现实时更新、及时提醒、完成奖励等功能</p>
-                </div>
-                <div class="clearboth"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 center">
-                    <a class="circle-img" href="http://github.com/Ovilia/Polyvia" target="_blank">
-                        <img src="img/zhujianer.png" alt="Polyvia" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4><a href="http://github.com/Ovilia/Polyvia" target="_blank">走马灯</a></h4>
-                    <p>三维轮播web组件，支持纯 JavaScript 和 jQuery 版本。</p>
-                </div>
-                <div class="col-md-2 center">
-                    <a class="circle-img" href="http://01org.github.com/jWebAudio" target="_blank">
-                        <img src="img/jwebaudio.png" alt="jWebAudio" />
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4><a href="http://01org.github.com/jWebAudio" target="_blank">pageCorner</a></h4>
-                    <p>翘起纸张一个小角的jQuery插件</p>
-                </div>
-                <div class="clearboth"></div>
-            </div>
-            <p class="center">更多精彩，敬请移步 <a href="http://github.com/Ovilia" target="_blank" class="highlight">GitHub</a></p>
-		</section>
-		<section class="section ability">
-			<h1>擅长技术</h1>
-            <div class="tag-panel">
-                <div class="tag expert">CSS</div>
-                <div class="tag familiar">SCSS</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">JavaScript</div>
-                <div class="tag expert">jQuery</div>
-                <div class="tag expert">Bootstrap</div>
-                <div class="tag familiar">Three.js</div>
-                <div class="tag familiar">WebGL</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag familiar">HTML5</div>
-                <div class="tag familiar">Web Audio</div>
-                <div class="tag">WebRTC</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">网页设计</div>
-                <div class="tag familiar">平面设计</div>
-                <div class="tag familiar">音视频编辑</div>
-            </div>
-            <div class="tag-panel">
-                <div class="tag expert">PhotoShop</div>
-                <div class="tag expert">InkScape</div>
-            </div>
-            <p>注：深色表示熟练掌握，浅色表示用过</p>
-		</section>
-		<section class="section workExp">
-			<h1>实习经历</h1>
-            <h4>Intel 软件工程师</h4>
-            <p>2012年9月 - 2013年2月，2014年5月 - 2014年12月</p>
-            <p>开发了 <a href="http://01org.github.com/jWebAudio" target="_blank">jWebAudio</a>、<a href="https://github.com/Ovilia/arcalands" target="_blank">三维打砖块游戏</a>等</p>
-            <p>相关技术：Web Audio, WebGL, Three.js, WebRTC</p>
-            <p>2014下半年优秀实习生</p>
+		<div class="main-container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+					</div>
 
-            <h4>阿里巴巴无线事业部前端工程师</h4>
-            <p>2015年7月 - 2015年9月</p>
-            <p>相关技术：WebGL, Three.js</p>
-
-            <h4>百度前端工程师</h4>
-            <p>2015年10月 - 2016年3月</p>
-            <p>ECharts 热力图和 gallery</p>
-            <h1>目前供职</h1>
-            <h2>百度前端工程师</h2>
-            <h4>从事 <a href="http://echarts.baidu.com">ECharts</a> 相关工作</h4>
-            <p>工作地点：上海</p>
-            <p>涉及数据可视化、Canvas、WebGL、JavaScript、Node.js 等</p>
-		</section>
-        <section class="section messageBoard">
-        	<h2 class="title"><span>人生若只如初见 何事秋风悲画扇</span>留言</h2>
-	        <textarea id="text"></textarea>
-	        <input type="button" value="留言" class="button">
-	        <ul id="list"></ul>
-        </section>   
-        <section class="section link">
-        	<h1>了解更多</h1>
-            <h2><a href="http://zhangwenli.com/" target="_blank">个人主页</a> | <a href="https://www.linkedin.com/in/wenlizhang" target="_blank">LinkedIn</a></h2>
-            <p>Email: <a href="mailto:me@zhangwenli.com" target="_blank">me@zhangwenli.com</a></p>
-            
-            <h2><a href="Web Front-End Wenli Zhang.pdf" target="_blank" class="highlight">下载简历</a></h2>
-            <div id="contact-panel">
-                <a class="social-share-element social-twitter" href="https://twitter.com/OviliaZhang" target="_blank" title="Follow me on Twitter" onclick="_gaq.push(['_trackEvent', 'Follow', 'Twitter', 'InCv']);"></a>
-                <a class="social-share-element social-google" href="https://plus.google.com/u/0/112802684720065263732?rel=author" target="_blank" title="Follow me on Google Plus" onclick="_gaq.push(['_trackEvent', 'Follow', 'GPlus', 'InCv']);"></a>
-                <a class="social-share-element social-github" href="https://github.com/Ovilia" target="_blank" title="Follow me on GitHub" onclick="_gaq.push(['_trackEvent', 'Follow', 'GitHub', 'InCv']);"></a>
-                <a class="social-share-element social-linkedin" href="http://www.linkedin.com/profile/view?id=148742016" target="_blank" title="Follow me on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Follow', 'LinkedIn', 'InCv']);"></a>
-                <a class="social-share-element social-weibo" href="http://weibo.com/plainjane" target="_blank" title="Follow me on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Follow', 'Weibo', 'InCv']);"></a>
-                <a class="social-share-element social-douban" href="http://www.douban.com/people/ovilia1024/" target="_blank" title="Follow me on Douban" onclick="_gaq.push(['_trackEvent', 'Follow', 'Douban', 'InCv']);"></a>
-            </div>
-        </section>
-    </div>
-	<footer>
-		<div class="footer">
-			<div class="copy">
-				<p>
-				&copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By yangzj1992. All Rights Reserved.
-				</p>
-				<p>
-					<span id="busuanzi_container_site_pv">
-					This site already had <span id="busuanzi_value_site_pv"></span> Visits by
-					</span>
-					<span id="busuanzi_container_site_uv">
-					<span id="busuanzi_value_site_uv"></span> Visitors 
-					</span>
-				</p>
-				<p>
-					Powered by <a href="https://hexo.io/zh-cn/">Hexo</a> & <a href="https://github.com/yangzj1992/TKL-REVISION">TKL-REVISION</a>,
-					Hosted by <a href="https://pages.coding.me">Coding Pages</a> & <a href="https://pages.github.com/">Github Pages</a>
-				</p>
-			</div>
-			<div class="social">
-				<ul>
-
-					<li><a href="https://github.com/yangzj1992" title="Github" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-Popular_GitHub"></i>&nbsp;</a></li>
-
-					<li class="weixin"><a href="javascript:void(0)" title="Weixin"><i class="icon-CN_tencent_wechat"></i>&nbsp;</a></li>
-
-					<li><a href="http://weibo.com/yangzj1992" title="Sina-Weibo" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-CN_sina_weibo"></i>&nbsp;</a></li>
-
-
-					<li><a href="https://twitter.com/yangzj1992" title="Twitter" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-Popular_Twitter"></i>&nbsp;</a></li>
-
-
-					<li><a href="http://www.zhihu.com/people/yangzj1992" title="Zhihu" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-CN_zhihu"></i></a>&nbsp;</li>
-
-				</ul>
-				<div class="search">
-					<form id="searchform" class="searchform" onsubmit="return dispatch()">
-						<div class="search_text">
-							<i class="fa fa-search"></i>
-							<input type="text" name="q" id="searchbox" class="searchbox" value="" placeholder="">
-						</div>
-					</form>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">首页</a></li>
+							<li><a href="#">个人简介</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">前端能力<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">个人作品</a></li>
+									<li><a href="#">技术储备</a></li>
+									<li><a href="#">工作经验</a></li>
+								</ul>
+							</li>
+							<li><a href="#">留言板</a></li>
+						</ul>
+						<form class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default">搜索</button>
+						</form>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I'm here<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><img src="images/github.png" alt="">Githhub</a></li>
+									<li><a href="#"><img src="images/email.png" alt="">Email</a></li>
+									<li><a href="#"><img src="images/wechat.png" alt="">微信</a></li>
+									<li><a href="#"><img src="images/zhihu.png" alt="">知乎</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</div>
+			</nav>
+			<div class="first-container">
+				<div class="first-container-text">
+					<p class = "first-p" style="font-size:18px;color:orangered">GLAD TO SEE U, WELCOME TO WISTON'S BLOG</p>
+					<p class="second-p">I'm the type of person,if you ask me a question, and I don't know the answer,I'm gonna to tell you that I don't know.But I bet you what: I know how to find the answer, and I'll find the answer.</p>
+					<p>我是这样的人，如果你问的问题我不知道答案，我会直接告诉你“我不知道”。但我向你保证：我知道如何寻找答案，而且我一定会找出答案的。</p>
+				</div>
+				<ul class="countdown wow fadeInUp" data-wow-duration="7s">
+					<li><span class="self">已经自学前端：</span></li>
+					<li>
+						<span id="days">00</span>
+						<p class="days_ref">days</p>
+					</li>
+					<li>
+						<span id="hours">00</span>
+						<p class="hours_ref">hours</p>
+					</li>
+					<li>
+						<span id="minutes">00</span>
+						<p class="minutes_ref">minutes</p>
+					</li>
+					<li>
+						<span id="seconds">00</span>
+						<p class="seconds_ref">seconds</p>
+					</li>
+				</ul>
 			</div>
-			<div class="clearfix"></div>
+			<div class="cover"></div>
+			<div class="self-info">
+				<div class="selfIntro">
+					<div class="center-section">
+						<img src="images/photo.jpg" />
+			            <h1>陆国栋</h1><br>
+			            <p class="subtitle"><span>挑战&创新</span><span>钻研&细致</span><span>激情&执着</span></p>
+			            <p>想成为前端攻城狮的机械设计工程师</p>
+			            <p>哈尔滨工业大学机电工程学院硕士</p>
+						<p><a href="mailto:guodong_lu@126.com">E-mail:guodong_lu@126.com</a></p><br>
+						<p>If you want something, go get it.</p>
+					</div>
+				</div>
+				<div class="selfIntro">
+					<div class="center-section">
+						<h1>项目经验</h1>
+			            <div class="row">
+			                <div class="col-md-2 center">
+			                    <a class="circle-img" href="#" target="_blank">
+			                        <img src="" alt="Winston的游戏小屋" />
+			                    </a>
+			                </div>
+			                <div class="col-md-4">
+			                    <p><a href="#" target="_blank">Winston的游戏小屋</a></p>
+			                    <p>H5游戏及其目录的CSS3展示</p>
+			                </div>
+			                <div class="col-md-2 center">
+			                    <a class="circle-img" href="" target="_blank">
+			                        <img src="" alt="Flower for U" />
+			                    </a>
+			                </div>
+			                <div class="col-md-4">
+			                    <p><a href="#" target="_blank">Flower for U</a></p>
+			                    <p>Vue全家桶：鲜花网站，支持在线下单支付功能</p>
+			                </div>
+			                <div class="clearboth"></div>
+			            </div>
+			            <div class="row">
+			                <div class="col-md-2 center">
+			                    <a class="circle-img" href="#" target="_blank">
+			                        <img src="#" alt="LLPlayer" />
+			                    </a>
+			                </div>
+			                <div class="col-md-4">
+			                    <p><a href="#" target="_blank">LLPlayer</a></p>
+			                    <p>Vue全家桶：简洁音乐视频播放器</p>
+			                </div>
+			                <div class="col-md-2 center">
+			                    <a class="circle-img" href="#" target="_blank">
+			                        <img src="" alt="贴身助理" />
+			                    </a>
+			                </div>
+			                <div class="col-md-4">
+			                    <p><a href="#" target="_blank">贴身助理</a></p>
+			                    <p>日程管理客户端，实时更新、及时提醒、奖励等功能</p>
+			                </div>
+			                <div class="clearboth"></div>
+			            </div>
+			            <div class="row">
+			                <div class="col-md-2 center">
+			                    <a class="circle-img" href="#" target="_blank">
+			                        <img src="" alt="走马灯" />
+			                    </a>
+			                </div>
+			                <div class="col-md-4">
+			                    <p><a href="" target="_blank">走马灯</a></p>
+			                    <p>三维轮播web组件，支持纯 JavaScript 和 jQuery 版本。</p>
+			                </div>
+			                <div class="col-md-2 center">
+			                    <a class="circle-img" href="#" target="_blank">
+			                        <img src="" alt="pageCorner" />
+			                    </a>
+			                </div>
+			                <div class="col-md-4">
+			                    <p><a href="#" target="_blank">pageCorner</a></p>
+			                    <p>翘起纸张一个小角的jQuery插件</p>
+			                </div>
+			                <div class="clearboth"></div>
+			            </div>
+			            <p class="center">更多精彩，敬请移步 <a href="" target="_blank" class="highlight">GitHub</a></p>
+					</div>
+				</div>
+				<div class="selfIntro">
+					<div class="center-section">
+						<h1>擅长技术</h1>
+			            <div class="tag-panel">
+			                <div class="tag expert">CSS</div>
+			                <div class="tag familiar">SCSS</div>
+			            </div>
+			            <div class="tag-panel">
+			                <div class="tag expert">JavaScript</div>
+			                <div class="tag expert">jQuery</div>
+			                <div class="tag expert">Bootstrap</div>
+			                <div class="tag familiar">Three.js</div>
+			                <div class="tag familiar">Vue.js</div>
+			            </div>
+			            <div class="tag-panel">
+			                <div class="tag familiar">HTML5</div>
+			                <div class="tag familiar">Angular.js</div>
+			                <div class="tag">ES6</div>
+			            </div>
+			            <div class="tag-panel">
+			                <div class="tag expert">PhotoShop</div>
+			                <div class="tag expert">InkScape</div>
+			            </div>
+			            <p>注：深色表示熟练掌握，浅色表示用过</p>
+					</div>
+				</div>
+				<div class="selfIntro">
+					<div class="center-section">
+						<h1>工作经验</h1>
+			            <h4>北京卫星制造厂 机械设计工程师</h4>
+			            <p>2014年8月——2017年6月</p>
+			            <p>承担环控生保分系统总体设计，担任产品经理</p>
+			            <p>承担部门市场任务技术攻关，客户沟通协调工作</p>
+			            <p>承担产品研发、设计、生产、测试、协外等多个环节的调度工作</p>
+			            <p>入职年限最短的优秀员工、优秀党员</p>
+
+			            <h4>北京派和科技股份有限公司 产品经理</h4>
+			            <p>2017年6月 - 2018年6月</p>
+			            <p>负责市场调研、客户沟通等产品研发市场工作</p>
+			            <p>承担多款新产品研发、生产、测试等项目</p>
+			            <p>入职三个月提出三款产品的研发方案和研制计划</p>
+
+			            <h4>前端工程师</h4>
+			            <p>未来</p>
+			            <p>为兴趣而不断努力</p>
+					</div>
+				</div>
+		        <div class="selfIntro">
+		        	<div class="center-section">
+		        		<h1>留言板</h1>
+		        		<h2 class="mess-title"><span>人生若只如初见 何事秋风悲画扇</span>留言</h2>
+				        <textarea id="mess-text"></textarea>
+				        <input type="button" value="留言" class="mess-button">
+				        <ul id="mess-list"></ul>
+		        	</div>
+		        </div>   
+		    </div>
+			<footer>
+				<div class="footer">
+					<div class="social">
+						<ul>
+							<li><a href="#" title="Github" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-Popular_GitHub"></i>&nbsp;</a></li>
+
+							<li class="weixin"><a href="javascript:void(0)" title="Weixin"><i class="icon-CN_tencent_wechat"></i>&nbsp;</a></li>
+
+							<li><a href="http://weibo.com/yangzj1992" title="Sina-Weibo" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-CN_sina_weibo"></i>&nbsp;</a></li>
+
+
+							<li><a href="https://twitter.com/yangzj1992" title="Twitter" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-Popular_Twitter"></i>&nbsp;</a></li>
+
+
+							<li><a href="http://www.zhihu.com/people/yangzj1992" title="Zhihu" target="_blank" rel="nofollow noopener noreferrer"><i class="icon-CN_zhihu"></i></a>&nbsp;</li>
+
+						</ul>
+						<div class="search">
+							<form id="searchform" class="searchform" onsubmit="return dispatch()">
+								<div class="search_text">
+									<i class="fa fa-search"></i>
+									<input type="text" name="q" id="searchbox" class="searchbox" value="" placeholder="">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div style="display:none">
+					<!-- cnzz统计代码  -->
+					<script type="text/javascript">
+					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000263347'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1000263347' type='text/javascript'%3E%3C/script%3E"));
+					</script>
+					<!-- cnzz统计代码end  -->
+				</div>
+			</footer>
 		</div>
-		<div style="display:none">
-			<!-- cnzz统计代码  -->
-			<script type="text/javascript">
-			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000263347'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1000263347' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-			<!-- cnzz统计代码end  -->
-		</div>
-	</footer>
+	</div>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>

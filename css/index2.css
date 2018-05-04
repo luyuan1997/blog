@@ -1,9 +1,13 @@
 html,body{margin:0;padding:0;overflow:scroll;}
 body{
-	font-family:"微软雅黑";
 	text-align: center;
 	color: #fff;
 	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+	overflow:hidden;
+	-webkit-font-smoothing:antialiased;
+}
+a{
+	text-decoration:none;
 }
 h2{
 	font-size:4em;
@@ -22,27 +26,34 @@ p{
 	opacity: 0.699999988079071044921875;
 	text-align: justify;
 }
-::-webkit-scrollbar, -moz-scrollbar {
-	width : 0px;
+.clr{
+	widows:0;
+	height:0;
+	overflow:hidden;
+	clear:both;
+	padding:0;
+	margin:0;
 }
-::-webkit-scrollbar-track, -moz-scrollbar {
-	width : 0px;
-	background : rgba(51, 51, 51, 0.21);
-}
-::-webkit-scrollbar-thumb, -moz-scrollbar {
-	background : rgba(51, 51, 51, 0.71);
-}
-#home-area{
-	position:fixed;
+.main-container{
 	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.first-container{
+	width:100%;
+	height:100%;
+	position:fixed;
 	z-index:1;
 }
-.home-area-text p{
-	display:block;
-	font-size:16px;
+.first-container *{
+	text-align: center;
+}
+.first-container-text p{
+	display:inline-block;
 	width:80%;
 	margin:auto;
-	text-align: center;
 }
 ul.countdown{
 	list-style:none;
@@ -66,39 +77,123 @@ ul.countdown p{
 	text-transform: capitalize;
 	font-weight: 700;
 }
-.enter{
-	display:inline-block;
-	width:100px;
-	border:#ddd solid 1px;
-	border-radius: 5px;
-	padding:10px 20px;
-	background: #2098F5;
-}
-#gai{
+.cover{
+	width:100%;
 	overflow:hidden;
 	width:100%;
 	background: rgba(0,0,0,0.8);
-	margin-top:-20px;
 	z-index:10;
 }
-.item img{
-	width:100%;
-	position:relative;
-}
-.dropdown-menu{
-	text-align: center;
-}
 .self-info{
-	z-index:99999;
+	width:100%;
+	background-color:#aee2d9;
+	z-index:1000;
 	position:relative;
 }
-section{
-	margin:0;
-	padding:0;
-	background-color:#aee2d9;
+.self-info h1{
+	font-size:50px;
+	text-shadow: 1px 2px #4a4a4a, 2px 4px #2e2e2e;
+}
+.selfIntro{
+	width:100%;
+	height:100%;
+	display:table;
+	text-align:center;
 }
 .selfIntro *{
 	text-align: center;
+}
+.center-section{
+	height:100%;
+    display:table-cell;
+    vertical-align: middle;
+    color:#1c1c1c;
+}
+.subtitle span{
+	display:inline-block;
+	border:1px solid #096254;
+	border-radius: 5px;
+	padding:5px;
+}
+.subtitle span:first-child, .subtitle span:nth-child(2){
+	margin-right:20px;
+}
+.col-md-4 *{
+	text-align:left;
+}
+.mess-title{
+    padding:30px 0 10px 0;
+    font-size:18px;
+    border-bottom: #dbf7ea 1px solid;
+    overflow:hidden;
+    color:#1f7d6a;
+    text-shadow:#fff 1px 1px 2px;
+}
+.mess-title span{
+    float:right;
+    font-weight: normal;
+    font-size:16px;
+    animation:animations2 5s;
+    -moz-animation:animations2 5s;
+    -webkit-animation:animations2 5s;
+    -o-animation:animations2 5s;
+}
+@-webkit-keyframes animations2 { 0% {
+opacity:0;
+}
+ 40% {
+opacity:.8;
+}
+ 45% {
+opacity:.3;
+}
+ 50% {
+opacity:.8;
+}
+ 55% {
+opacity:.3;
+}
+ 60% {
+opacity:.8;
+}
+ 100% {
+opacity:1;
+}
+}
+#mess-text{
+    border-top: #a6c3bd 1px solid;
+    padding: 20px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.8);
+    width:80%;
+    display: block;
+    margin:20px auto;
+    font:14px "宋体",Arial, Helvetica, sans-serif;
+}
+.mess-button{
+    display:block;
+    height:40px;
+    border:1px solid #a6c3bd;
+    border-radius: 10px;
+    margin:0 20px 20px auto;
+}
+#mess-list li{
+    padding:5px 10px;
+    position: relative;;
+    word-break: break-all;
+}
+.red{color:#000;background: #f1f1f1;}
+.pink{color:#000;background: #ccc;}
+.clos {
+    display:inline-block;
+    margin-right:20px;
+    float:right;
+    width: 100px;
+    color: #fff;
+    background: red;
+    padding:0;
+    text-decoration: none;
+    text-align: center;
 }
 .navbar{
 	position:fixed;
@@ -126,5 +221,8 @@ section{
 	display:inline-block;
 }
 .workExp *{
+	text-align:center;
+}
+.section{
 	text-align:center;
 }
