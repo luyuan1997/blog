@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/index2.css">
 	<script src="js/timer.js"></script>
 	<script src="js/jquery-1.9.1.min.js"></script>
+	
 	<script>
 		$(window).on("load resize",function(){
 	        var h=window.innerHeight||document.body.clientHeight||document.documentElement.clientHeight;
@@ -18,6 +19,7 @@
 	        $('.selfIntro').css("height",h);
 	    });
 	</script>
+	
 </head>
 <body>
 	<div>
@@ -37,8 +39,8 @@
 
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">首页</a></li>
-							<li><a href="#">个人简介</a></li>
+							<li class="active"><a href="#" class="">首页</a></li>
+							<li><a href="#" >个人简介</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">前端能力<span class="caret"></span></a>
 								<ul class="dropdown-menu">
@@ -223,9 +225,9 @@
 		        <div class="selfIntro">
 		        	<div class="center-section">
 		        		<h1>留言板</h1>
-		        		<h2 class="mess-title"><span>人生若只如初见 何事秋风悲画扇</span>留言</h2>
+		        		<h2 class="mess-title">人生若只如初见 何事秋风悲画扇</h2>
 				        <textarea id="mess-text"></textarea>
-				        <input type="button" value="留言" class="mess-button">
+				        <input type="button" value="留言" id="mess-button">
 				        <ul id="mess-list"></ul>
 		        	</div>
 		        </div>   
@@ -241,7 +243,6 @@
 			</footer>
 		</div>
 	</div>
-	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script>
 		window.onload=function(){
@@ -254,6 +255,46 @@
 				i=i%5;
 				oBody.style.background="url(images/"+imgs[i]+") fixed top center";
 			},5000);
+
+			var btn = document.getElementById('mess-button');
+			var text = document.querySelector("#mess-text");
+			var list = document.querySelector("#mess-list");
+			var colors = ["red","pink"];
+			var num = 0;
+			btn.onclick = function(){
+				if (text.value.trim() == ""){
+					alert("难道你就对我如此淡漠，什么都不想和我说嘛？");
+					return false;
+				}
+				var li = document.createElement("li");
+				li.innerHTML = "我想轻轻地告诉你："+text.value;
+				if(list.children[0]&&list.children[0].className == "red"){
+					li.className = "pink";
+				} else {
+					li.className = "red";
+				};
+				var a =null;
+				li.onmouseover = function(){
+					if(a){
+						a.style.display="block";
+					} else {
+						a = document.createElement("a");
+						a.href = "javascript:;";
+						a.className = "clos";
+						a.innerHTML = "删除留言";
+						a.onclick = function(){
+							list.removeChild(this.parentNode);
+						};
+						this.appendChild(a);
+					}
+				};
+				li.onmouseout = function(){
+					a.style.display = "none";
+				};
+				list.insertBefore(li,list.children[0]);
+				text.value = "";
+				num++;
+			}
 		}
 	</script>
 	<p id="timeout"></p>

@@ -131,12 +131,15 @@ ul.countdown p{
 	margin-right: 0;
 }
 .mess-title{
-    padding:30px 0 10px 0;
+	width:80%;
+    display:block;
+    margin:auto;
     font-size:18px;
     border-bottom: #dbf7ea 1px solid;
     overflow:hidden;
     color:#1f7d6a;
     text-shadow:#fff 1px 1px 2px;
+    text-align:center;
 }
 .mess-title span{
     float:right;
@@ -179,15 +182,17 @@ opacity:1;
     margin:20px auto;
     font:14px "宋体",Arial, Helvetica, sans-serif;
 }
-.mess-button{
-    display:block;
+#mess-button{
+	background-color:#a6c3bd;
     height:40px;
+    width:10%;
     border:1px solid #a6c3bd;
     border-radius: 10px;
-    margin:0 20px 20px auto;
+    margin-bottom:20px;
 }
 #mess-list li{
     padding:5px 10px;
+    margin-bottom: 5px;
     position: relative;;
     word-break: break-all;
 }
